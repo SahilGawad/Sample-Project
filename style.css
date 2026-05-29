@@ -1,0 +1,167 @@
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f5e9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #c9a227, #a67c00);
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo */
+.header img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+/* Brand Name */
+.brand-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-right: auto;
+}
+
+/* Navigation Links */
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.header a:hover {
+    color: #fff7cc;
+}
+
+/* Container */
+.container {
+    background: white;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.container h1 {
+    text-align: center;
+    color: #a67c00;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: #4b3d00;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Inputs */
+.input,
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e6d8a8;
+    border-radius: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.input:focus,
+input:focus {
+    outline: none;
+    border-color: #c9a227;
+    box-shadow: 0 0 10px rgba(201, 162, 39, 0.25);
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: linear-gradient(135deg, #c9a227, #a67c00);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(166, 124, 0, 0.3);
+}
+
+/* Sign Up Link */
+.container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container p a {
+    color: #a67c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: #a67c00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 105px;
+}
+s
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .brand-name {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .header a {
+        font-size: 14px;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .header img {
+        height: 30px;
+        width: 30px;
+    }
+}
