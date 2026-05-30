@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai-Cup | Sign Up</title>
+
+    <!-- Style for Signup Page -->
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#f8f5e9,#e8d4a2);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .signup-container{
+            width:400px;
+            background:white;
+            padding:35px;
+            border-radius:15px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .signup-container h1{
+            text-align:center;
+            color:#8b5e3c;
+            margin-bottom:10px;
+        }
+
+        .signup-container p{
+            text-align:center;
+            margin-bottom:20px;
+            color:#666;
+        }
+
+        label{
+            display:block;
+            margin-top:12px;
+            margin-bottom:5px;
+            font-weight:600;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            outline:none;
+        }
+
+        input:focus{
+            border-color:#c9a227;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            margin-top:20px;
+            border:none;
+            border-radius:8px;
+            background:#c9a227;
+            color:white;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#a67c00;
+        }
+
+        .login-link{
+            margin-top:15px;
+        }
+
+        .login-link a{
+            color:#8b5e3c;
+            text-decoration:none;
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-container">
+        <h1>☕ Chai-Cup</h1>
+        <p>Create your account</p>
+
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create Password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+
+            <button type="submit">Sign Up</button>
+
+            <p class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
